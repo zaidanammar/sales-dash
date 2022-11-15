@@ -1,9 +1,11 @@
 import React from 'react'
+import Routes from './routes'
+import Layout from './components/templates/layout'
 
 const App = () => (
-  <div className="App">
-    <p className="text-7xl">test</p>
-  </div>
+  <Layout>
+    <Routes />
+  </Layout>
 )
 
 export default App
