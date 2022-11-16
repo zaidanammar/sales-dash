@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Menu, MenuItem, SubMenu } from 'react-pro-sidebar'

@@ -11,9 +11,7 @@ const TemplatesLayout = ({ children }: TemplatesLayoutProps) => (
   <main className="h-screen max-h-screen overflow-auto">
     <section className="flex w-full h-full">
       <Sidebar />
-      <div className="flex-1 h-screen overflow-y-scroll py-8 px-10">
-        {children}
-      </div>
+      <div className="flex-1 h-screen overflow-y-scroll p-8">{children}</div>
       <RightBar />
     </section>
   </main>

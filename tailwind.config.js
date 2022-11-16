@@ -15,8 +15,7 @@ module.exports = {
         textDark2: '#7A7A7A',
       },
       fontFamily: {
-        sans: ['Source Sans Pro', ...defaultTheme.fontFamily.sans],
-        label: ['Open Sans', ...defaultTheme.fontFamily.sans],
+        nunito: ['Nunito Sans', ...defaultTheme.fontFamily.sans],
       },
     },
   },

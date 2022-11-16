@@ -1,10 +1,12 @@
 import React from 'react'
 import Profile from '../../molecules/profile'
+import CardBalance from '../../molecules/card/balance'
 
 const TemplatesRightBar = () => (
-  <div className="w-[408px] bg-secondary p-8 lg:block hidden">
+  <main className="w-[360px] bg-secondary p-8 lg:block hidden">
     <Profile />
-  </div>
+    <CardBalance />
+  </main>
 )
 
 export default TemplatesRightBar
