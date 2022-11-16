@@ -4,7 +4,12 @@ import { BiChevronDown } from 'react-icons/bi'
 const MoleculesProfile = () => (
   <section className="flex justify-center items-center gap-3">
     <div className="rounded-full w-14 h-14 border-2 border-indigo-300 p-1">
-      <img src="./person.png" alt="person" className="rounded-full" />
+      <img
+        src="./person.png"
+        alt="person"
+        className="rounded-full w-full h-full"
+        loading="lazy"
+      />
     </div>
     <div>
       <p className="text-base text-textDark font-bold">Budi Budiman</p>

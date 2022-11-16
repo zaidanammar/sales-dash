@@ -5,7 +5,12 @@ const Agent = () => (
   <section className="flex items-center gap-3 mt-6 overflow-x-auto">
     <div className="w-fit">
       <div className="rounded-full w-14 h-14 border-2 border-indigo-300 p-1">
-        <img src="./person.png" alt="person" className="rounded-full" />
+        <img
+          src="./person.png"
+          alt="person"
+          className="rounded-full w-full h-full"
+          loading="lazy"
+        />
       </div>
     </div>
     <div className="w-full">
