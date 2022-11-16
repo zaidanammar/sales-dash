@@ -3,7 +3,7 @@ import Profile from '../../molecules/profile'
 import CardBalance from '../../molecules/card/balance'
 
 const TemplatesRightBar = () => (
-  <main className="w-[360px] bg-secondary p-8 lg:block hidden">
+  <main className="w-[320px] bg-secondary p-8 lg:block hidden">
     <Profile />
     <CardBalance />
   </main>

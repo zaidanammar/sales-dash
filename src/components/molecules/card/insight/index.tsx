@@ -19,7 +19,7 @@ const MoleculesCardInsight = ({ item }: MoleculesCardInsightProps) => {
   const { amount, arrow, percentage, title } = item
 
   return (
-    <section className="bg-white shadow-lg p-4 rounded-xl">
+    <section className="bg-white shadow-md p-4 rounded-xl cursor-pointer min-w-max hover:transition-colors hover:bg-indigo-50 duration-300 ease-in-out">
       <div>
         <p className="font-bold text-textDark2">{title}</p>
       </div>

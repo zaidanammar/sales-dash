@@ -1,15 +1,13 @@
 import React from 'react'
+import Headline from '../components/molecules/headline'
 import DashboardInsight from '../components/organisms/dashboard-insight'
+import Sales from '../components/organisms/sales'
 
 const Dashboard = () => (
   <main>
-    <aside>
-      <p className="text-2xl font-bold">Dashboard</p>
-      <p className="font-bold text-textDark2">
-        Today’s date: Sun, 10 April 2022
-      </p>
-    </aside>
+    <Headline />
     <DashboardInsight />
+    <Sales />
   </main>
 )
 

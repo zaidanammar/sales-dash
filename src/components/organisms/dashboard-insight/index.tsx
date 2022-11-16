@@ -18,7 +18,7 @@ const insight = [
 ]
 
 const OrganismsDashboardInsight = () => (
-  <article className="grid grid-cols-3 gap-5 mt-10">
+  <article className="grid grid-cols-3 gap-5 mt-10 pb-5 w-auto overflow-x-auto">
     {insight.map((item) => (
       <CardInsight key={item.title} item={item} />
     ))}
