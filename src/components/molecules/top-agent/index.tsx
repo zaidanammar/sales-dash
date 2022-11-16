@@ -2,7 +2,7 @@
 import React from 'react'
 
 const Agent = () => (
-  <section className="flex items-center gap-3 my-6">
+  <section className="flex items-center gap-3 mt-6 overflow-x-auto">
     <div className="w-fit">
       <div className="rounded-full w-14 h-14 border-2 border-indigo-300 p-1">
         <img src="./person.png" alt="person" className="rounded-full" />
@@ -10,7 +10,7 @@ const Agent = () => (
     </div>
     <div className="w-full">
       <p className="text-primary text-sm font-bold">PT Suka Maju</p>
-      <div className=" text-textDark2 font-bold text-xs">
+      <div className=" text-textDark2 font-bold text-xs truncate">
         <div className="flex justify-between mt-0.5">
           <p>Profit</p>
           <p>Rp. 3.700.000</p>
@@ -29,7 +29,7 @@ const Agent = () => (
 )
 
 const MoleculesTopAgent = () => (
-  <article className="shadow-md rounded-xl p-5 bg-white">
+  <article className="shadow-md rounded-xl p-5 h-fit xl:col-span-1 col-span-2">
     <p className="font-bold text-textDark2">Top 5 Agents</p>
     <div className="mt-6">
       {new Array(5).fill(undefined).map((_, idx) => (

@@ -3,7 +3,7 @@ import { Sidebar, useProSidebar } from 'react-pro-sidebar'
 import { BsList } from 'react-icons/bs'
 
 import MoleculesMenu from '../../molecules/menu'
-import { listPath } from '../../config/link'
+import { listPath } from '../../../config/link'
 
 const TemplatesSidebar = () => {
   const { collapseSidebar, collapsed } = useProSidebar()
