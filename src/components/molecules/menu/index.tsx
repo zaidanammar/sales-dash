@@ -23,19 +23,21 @@ const MoleculesMenu = ({ item, handleCollapseSidebar }: MoleculesMenuProps) => {
   }
 
   return (
-    <Menu key={item.path} className="w-full">
+    <Menu key={item.path} className="w-full bg-background">
       {Array.isArray(item.subMenu) && item.subMenu.length > 0 && (
-        <SubMenu label={item.title}>
+        <SubMenu
+          label={item.title}
+          icon={<item.icon />}
+          className="-mt-3 py-1 pl-0.5 font-semibold"
+        >
           {item.subMenu.map((el) => (
-            <MenuItem className="bg-background" key={el.title}>
-              {el.title}
-            </MenuItem>
+            <MenuItem key={el.title}>{el.title}</MenuItem>
           ))}
         </SubMenu>
       )}
       {!Array.isArray(item.subMenu) && (
         <MenuItem
-          className={`-mt-3 py-1 pl-0.5 font-sans font-semibold ${
+          className={`-mt-3 py-1 pl-0.5 font-semibold ${
             pathname.indexOf(item.path) !== -1
               ? 'text-primary'
               : 'hover:text-secondary'

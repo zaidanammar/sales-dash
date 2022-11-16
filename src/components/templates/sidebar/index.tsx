@@ -19,7 +19,7 @@ const TemplatesSidebar = () => {
         isMobile && !collapsed ? '700px' : isMobile && collapsed ? '0' : '250px'
       }
     >
-      <div className="pt-11 sm:pb-16 pb-8 px-8 flex gap-3 w-full items-center sm:justify-center">
+      <div className="pt-11 sm:pb-16 pb-8 px-8 flex gap-3 w-full items-center sm:justify-center bg-background">
         {!collapsed ? (
           <p
             role="presentation"

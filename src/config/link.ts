@@ -1,31 +1,33 @@
-import { BsList } from 'react-icons/bs'
-import { FiLogOut } from 'react-icons/fi'
+import { BsList, BsBag, BsDiagram2 } from 'react-icons/bs'
+import { TbLayoutGrid } from 'react-icons/tb'
+import { RiWalletLine, RiLogoutBoxRLine } from 'react-icons/ri'
+import { GrTransaction } from 'react-icons/gr'
 
 export const listPath = [
   {
     title: 'Dashboard',
     path: 'dashboard',
-    icon: BsList,
+    icon: TbLayoutGrid,
   },
   {
     title: 'Balance',
     path: 'balance',
-    icon: BsList,
+    icon: RiWalletLine,
   },
   {
     title: 'Transaction',
     path: 'transaction',
-    icon: BsList,
+    icon: GrTransaction,
   },
   {
     title: 'Product',
     path: 'product',
-    icon: BsList,
+    icon: BsBag,
   },
   {
     title: 'Channel',
     path: '',
-    icon: BsList,
+    icon: BsDiagram2,
     subMenu: [
       {
         title: 'Agent',
@@ -47,6 +49,6 @@ export const listPath = [
   {
     title: 'Logout',
     path: 'login',
-    icon: FiLogOut,
+    icon: RiLogoutBoxRLine,
   },
 ]
